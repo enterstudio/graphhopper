@@ -11,10 +11,14 @@
     "bundleDebug": "browserify src/main/webapp/js/main-template.js --debug -o src/main/webapp/js/main.js",
     "bundleProduction": "browserify -g uglifyify src/main/webapp/js/main-template.js -o src/main/webapp/js/main.js",
     "test": "JASMINE_CONFIG_PATH=src/test/webapp/spec/jasmine.json jasmine",
-    "lint": "jshint src/main/webapp/js/"
+    "lint": "jshint src/main/webapp/js/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserify": {
-    "transform": [ "browserify-swap" ]
+    "transform": [
+      "browserify-swap"
+    ]
   },
   "browserify-swap": {
     "production": {
@@ -31,11 +35,13 @@
     "leaflet-loading": "0.1.24",
     "moment": "2.17.1",
     "uglifyify": "3.0.4",
-    "flatpickr": "2.3.5"
+    "flatpickr": "2.3.5",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "jasmine": "2.5.3",
     "jshint": "2.9.4",
     "watchify": "3.9.0"
-  }
+  },
+  "snyk": true
 }
