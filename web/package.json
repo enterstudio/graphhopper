@@ -22,7 +22,7 @@
     }
   },
   "dependencies": {
-    "browserify": "14.0.0",
+    "browserify": "15.0.0",
     "browserify-swap": "0.2.2",
     "d3": "3.5.17",
     "jquery": "3.1.1",
