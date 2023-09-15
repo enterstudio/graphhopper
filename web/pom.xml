@@ -16,7 +16,7 @@
         <version>0.9-SNAPSHOT</version>
     </parent>
     <properties>
-        <jetty.version>9.3.16.v20170120</jetty.version>
+        <jetty.version>9.4.52.v20230823</jetty.version>
     </properties>
 
     <dependencies>
