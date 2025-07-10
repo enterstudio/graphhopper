@@ -18,7 +18,7 @@
         <slf4j.version>1.7.21</slf4j.version>
         <log4j.version>1.2.17</log4j.version>
         <commons-compress.version>1.12</commons-compress.version>
-        <jackson.version>2.8.4</jackson.version>
+        <jackson.version>2.15.0</jackson.version>
 
         <org-netbeans-modules-editor-indent.CodeStyle.project.indent-shift-width>4</org-netbeans-modules-editor-indent.CodeStyle.project.indent-shift-width>
         <org-netbeans-modules-editor-indent.CodeStyle.project.spaces-per-tab>4</org-netbeans-modules-editor-indent.CodeStyle.project.spaces-per-tab>
@@ -270,7 +270,7 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties />
+            <properties/>
             <modules>                
                 <!-- See https://github.com/graphhopper/graphhopper/pull/874#issuecomment-261231518
                 Currently works for jdk8 only -->
@@ -294,13 +294,13 @@
                 <activeByDefault>false</activeByDefault>                                
                 <jdk>9-ea</jdk>
             </activation>
-            <properties />           
+            <properties/>           
             <build>
                 <plugins>
                     <plugin>
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <configuration>
-                            <systemPropertyVariables />
+                            <systemPropertyVariables/>
                             <argLine>--add-opens java.base/java.lang=ALL-UNNAMED</argLine>
                         </configuration>
                     </plugin>
